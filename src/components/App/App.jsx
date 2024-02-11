@@ -1,35 +1,75 @@
+
+
+import Profile from '../Profile/Profile';
+import user from '../../data/userData.json';
+
+// import Statistics from '../Statistics/Statistics';
+// import data from '../../data/data.json';
+
+import { FriendList } from '../FriendList/FriendList';
+import friends from '../../data/friends.json';
+
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
+import transactions from '../../data/transactions.json';
+import css from './App.module.css';
+
+export const App = () => {
+  return (
+    <div className={css.app}>
+      <>
+        <div className={css.wrapper}>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}         
+      />        
+      <FriendList friends={friends}
+      />
+      </div>
+      <TransactionHistory
+        items={transactions} />; 
+      </>
+      </div>
+    );  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg';
+// import userData from "../../userData.json";
 // import './App.css'
+// import { Profile } from "../Profile/Profile";
 
-// function App() {
-//   const [count, setCount] = useState(0)
-
+// export const App = () => {
 //   return (
 //     <>
-//       <div>
-//         <a href="https://vitejs.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
+//       <Profile
+//         name={userData.username}
+//         tag={userData.tag}
+//         location={userData.location}
+//         image={userData.avatar}
+//         stats={userData.stats}
+//       />
 
-// export default App
+//       {/* <FriendList friends={friends} />
+//       <TransactionHistory items={transactions} />
+//        */}
+//     </>
+//   );
+// };
