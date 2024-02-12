@@ -1,69 +1,63 @@
-.profile {
-    padding-top: 30px;
-    border: 1px solid rgb(206, 197, 197);
-    border-radius: 2px;
+.profileBox {
+    padding-top: 24px;
+    width: 480px;
+    border: 2px solid #000;
+    border-radius: 16px;
+    background-color: white;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-.description {
-    text-align: center;
-}
-
-.avatar {
+.mainImage {
+    margin: 0 auto;
+    width: 220px;
     border-radius: 50%;
-    width: 200px;
-    margin-bottom: 20px;
-    border: 1px solid rgb(206, 197, 197);
+    background-color: #242120;
+    box-shadow: 0 4px 4px #242120;
 }
 
-.name {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 20px;
+.nameTitle {
+    margin-top: 24px;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
 }
 
-.tag {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 26px;
-    font-weight: 500;
-    color: rgb(101, 103, 104);
+.nicknameTitle {
+    margin-top: 24px;
+    color: grey;
+    font-size: 24px;
 }
 
 .location {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 25px;
-    font-weight: 500;
-    color: rgb(101, 103, 104);
+    margin-top: 8px;
+    color: grey;
+    font-size: 24px;
 }
 
-.stats {
+.statsList {
+    margin-top: 16px;
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    justify-content: space-between;
+    background-color: rgb(190, 189, 189);
 }
 
-.statsOne {
+.listItem {
+    padding: 16px 8px;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 164px;
-    height: 164px;
-    background-color: rgb(212, 226, 243);
-    border: 1px solid rgb(206, 197, 197);
+    border: 1px solid grey;
 }
 
-.label {
+.listTitle {
+    color: #000;
+    font-size: 24px;
+}
+
+.listAmount {
+    color: #000;
     font-size: 20px;
-    font-weight: 500;
-    color: rgb(101, 103, 104);
+    font-weight: 700;
 }
 
-.quantity {
-    font-size: 26px;
-    font-weight: 500;
-}
