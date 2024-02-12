@@ -2,7 +2,7 @@
 import style from "./Profile.module.css";
 
 
-export const Profile = ({
+const Profile = ({
   image,
   name,
   tag,
@@ -38,4 +38,4 @@ export const Profile = ({
   );
 };
 
-
+export default Profile;

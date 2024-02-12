@@ -1,16 +1,16 @@
 
-import { Profile } from "../Profile/Profile";
+import Profile from "../Profile/Profile";
 import userData from '../../data/userData.json'; 
 
-import { FriendList } from '../FriendList/FriendList';
+import FriendList from '../FriendList/FriendList';
 import friends from '../../data/friends.json';
 
-import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
 import transactions from '../../data/transactions.json';
 import "../../../node_modules/modern-normalize/modern-normalize.css";
 
 
-export const App = () => {
+const App = () => {
   return (
     <div>
       <Profile
@@ -26,3 +26,4 @@ export const App = () => {
   );
 };
 
+export default App;
